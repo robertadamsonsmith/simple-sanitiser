@@ -1,0 +1,19 @@
+{
+  "name": "simple-sanitiser",
+  "version": "1.0.0",
+  "description": "Simple sanitiser for user input that requires as little code to write as possible, makes sense, and runs quickly",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertadamsonsmith/simple-sanitiser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/robertadamsonsmith/simple-sanitiser/issues"
+  },
+  "homepage": "https://github.com/robertadamsonsmith/simple-sanitiser#readme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rob Smith",
+  "license": "ISC"
+}
