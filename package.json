@@ -1,6 +1,6 @@
 {
   "name": "simple-sanitiser",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple sanitiser for user input that requires as little code to write as possible, makes sense, and runs quickly",
   "repository": {
     "type": "git",

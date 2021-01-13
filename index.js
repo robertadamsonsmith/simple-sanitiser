@@ -18,16 +18,16 @@ class SaneError extends Error
 		super();
 		this.type = type;
 		this.message = message;
-		this.stack = [];
+		this.value_stack = [];
 	}
 
 	toString(){
 
 		var message = this.message;
-		if(this.stack.length){
-			let stack = this.stack.slice(0);
-			stack.reverse;
-			let label = stack.join('.');
+		if(this.value_stack.length){
+			let value_stack = this.value_stack.slice(0);
+			value_stack.reverse;
+			let label = value_stack.join('.');
 			message = message.replace(':label', '"'+label+'"');
 		}
 		return message;
@@ -489,7 +489,7 @@ function sane(value, type, label)
 
 		//If the error is a SaneError, and current label to stack (to help locate the issue)
 		if(e instanceof SaneError){
-			e.stack.push(label);
+			e.value_stack.push(label);
 		}
 
 		throw(e);
