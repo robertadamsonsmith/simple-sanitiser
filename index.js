@@ -211,7 +211,7 @@ class URLTester extends StringTester
 		super(...args);
 		this._type = 'url';
 
-		if(!this.value.match(/^http:\/\/\w+(\.\w+)*(:[0-9]+)?\/?(\/[.\w]*)*$/))
+		if(!this.value.match(/^https?:\/\/\w+(\.\w+)*(:[0-9]+)?\/?(\/[.\w]*)*$/))
 			this.error(":label is not a valid url");
 	}
 }
